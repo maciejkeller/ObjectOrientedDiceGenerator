@@ -29,7 +29,7 @@ public class Menu {
     }
 
     public String readOption() {
-        String option = SCANNER.next();
+        String option = SCANNER.nextLine();
         return option;
     }
 
