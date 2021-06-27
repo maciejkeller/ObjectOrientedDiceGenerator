@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class Dice implements IDiceThrow {
 
-    private int numberOfSides;
+    private final int numberOfSides;
 
     public Dice(int numberOfSides) {
         this.numberOfSides = numberOfSides;
@@ -15,8 +15,7 @@ public class Dice implements IDiceThrow {
 
     @Override
     public int throwDice() {
-        int result = new Random().nextInt(numberOfSides) + 1;
-        return result;
+        return new Random().nextInt(numberOfSides) + 1;
     }
 
     @Override

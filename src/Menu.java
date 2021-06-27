@@ -29,8 +29,7 @@ public class Menu {
     }
 
     public String readOption() {
-        String option = SCANNER.nextLine();
-        return option;
+        return SCANNER.nextLine();
     }
 
     public void showResult(Dice dice) {
