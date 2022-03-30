@@ -48,7 +48,7 @@ public class Menu {
         System.exit(-1);
     }
 
-    public static void promptEnterKey() {
+    private static void promptEnterKey() {
         System.out.println("Żeby kontynuować wciśnij ENTER.");
         try {
             int read = System.in.read(new byte[2]);
